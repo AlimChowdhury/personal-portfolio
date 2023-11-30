@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce82cc8be6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Programmer</p>
+                <H1>Hi, I'm <span>Alim</span><br>from Bangladesh</H1>
+            </div>
+
+        </div>
+    </div>
+
+<!------------------------------about----------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    HI, I'm <span> Alim Ullah chowdhury</span>, competitive programmer navigating the intricate realms of algorithmic challenges. Armed with proficiency in C, C++, Java, I've successfully cracked the code on 800+ problems across various online judges.<br>
+                    Beyond the competitive coding arena, I extend my expertise to real-world applications. I've ventured into Spring Boot projects, bringing the power of Java to build robust and scalable solutions.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Proficient with C, C++, Java and
+                        Familiar with Python, JavaScript</li>
+                        <li><span>Problem-solving</span><br> Solved 800+ problems on several online judge. 
+                        <a href="https://www.stopstalk.com/user/profile/AlimChowdhury"> StopStalk Profile</a></li>
+                        <li><span>Web technologies</span><br>HTML5, CSS3</li>
+                        <li><span>Web Framework</span><br>Spring Boot, Django</li>
+                        <li><span>DBMS</span><br>MySQL, PostgreSQL</li>
+                        <li><span>Version control</span><br>Git</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>Industrial Mentorship Program <span>Java/Spring-Boot</span><br>6 month</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Sc. in Computer Science and Engineering</span><br>International Islamic University Chittagong (2019 - Present)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------services------------------------------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web design</h2>
+                <p>JAVA/Spring-Boot</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---------------------------------------------Portfolio------------------------------------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Ecommerce Website</h3>
+                    <p>• Developed a food e-commerce platform using Spring Boot, providing
+                    a seamless online food ordering and delivery experience for
+                    customers.  <br>
+                    • Created distinct modules for Admin, Customer, and Library, each with
+                    specific functionalities, ensuring efficient project organization and
+                    maintainability.
+                    </p>
+                    <a href="https://github.com/AlimChowdhury/Ecommerce-website">Link</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Student-Management-System</h3>
+                    <p>• Objective of this project is to manage a student database using PostgreSQL as the underlying database management system. <br>
+                    • This entails creating a backend application that handles CRUD (Create, Read, Update, Delete) operations for student records
+                    </p>
+                    <a href="https://github.com/AlimChowdhury/Student-Management-System">Link</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3></h3>
+                    <p></p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+        <a href=""class="btn">See more</a>
+
+    </div>
+</div> 
+<!---------------------------------------------Contact------------------------------------------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> md.alim.chowdhury8@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +8801731867667</p>
+                <div class="social-icons">
+                    <a href="https://github.com/AlimChowdhury"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alimullah17/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/Alim_Chowdhury_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------JS------------------------------------------------------>    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+</script>
+
+</body>
+</html>
